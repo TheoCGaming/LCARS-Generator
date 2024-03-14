@@ -188,6 +188,11 @@ Generator.generate = function () {
     code += '</svg>';
     
     Control.setFrame(code, width, height, Generator.options.colors.background);
+    var cssVars = document.querySelector(':root');
+    var cssStyles = getComputedStyle(cssVars);
+    var cssTheme= cssStyles.getPropertyValue('--cssTheme');
+    var cssColors = Generator.randomColor
+    cssVars.style.setProperty('--cssTheme', cssColors());
 }
 
 /**

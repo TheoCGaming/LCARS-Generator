@@ -19,16 +19,11 @@
     </head>
     <body>
         <div id="mainContainer">
-            <div id="testFrameContainer">
-                <div id="testFrame">
-                    
-                </div>
-            </div>
+            
             <div id="banner">LCARS Generator</div>
+            
             <div id="optionsContainer">
-                <div>
-                    <div id="submitButton" class="button">Generate</div>
-                </div>
+            
                 
                 <div>
                     <h3>Dimensions</h3>
@@ -39,7 +34,7 @@
                     
                     <h3>Border Style</h3>
                     <p><input id="inputBorderPadding" class="number" type="text" /> Padding</p>
-                    <p><input id="inputBorderTitle" type="text" /> Title</p>
+                    <p><input id="inputBorderTitle" type="text" autocapitalize="characters" /> Title</p>
                     
                     <h4>Top</h4>
                     <p><input id="inputBorderTopHeight" class="number" type="text" /> Height</p>
@@ -60,7 +55,12 @@
                     <p><input id="inputBorderLeftWidth" class="number" type="text" /> Width</p>
                     <p><input id="inputBorderLeftBlockHeight" class="number" type="text" /> Block Height</p>
                     <p><input id="inputBorderLeftBlockVariance" class="number" type="text" /> Block Variance</p>
+                    
+                    <div>
+                    
                 </div>
+                </div>
+                
                 
                 <div>
                     <h3>Colors</h3>
@@ -77,10 +77,20 @@
                     <table id="borderThemesTable">
                         
                     </table>
-                    <div id="newThemeButton" class="button">New Theme</div>
+                    <div id="newThemeButton" class="button"><span class="btxt">New Theme</span></div>
+                    <div id="submitButton" class="button" style="line-height: 50px; margin-top: 10px;"><span class="btxt">Generate</span></div>
                     <div id="errorMessage"></div>
+                    
+                
+            </div>
+                </div>
+                
+                <div id="testFrameContainer">
+                <div id="testFrame">
+                    
                 </div>
             </div>
+            
         </div>
     </body>
 </html>

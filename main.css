@@ -5,6 +5,10 @@
     src: url('resources/swiss911.ttf');
 }
 
+:root{
+    --cssTheme:#b3c7fa;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@
 body {
     background-image: url('resources/background.jpg');
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-    font-size: 10pt;
+    font-size: 15pt;
 }
 
 /*
@@ -25,23 +29,32 @@ body {
 */
 
 #testFrame {
-    margin: auto;
+    margin-right: 30px;
     padding: 25px;
     font-family: trek, "Arial Narrow", Arial;
     font-size: 14pt;
     text-transform: uppercase;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#testFrameContainer {
+    float:right;
+    padding-top:auto;
+    padding-bottom:auto;
 }
 
 #banner {
     font-family: trek, "Arial Narrow", Arial;
     font-size: 48pt;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 30px;
 }
 
 #optionsContainer {
     position: relative;
-    margin: auto;
+    margin: 30px;
     width: 800px;
 }
 
@@ -58,10 +71,16 @@ body {
 .button {
     width: 196px;
     padding: 5px;
-    line-height: 15px;
-    border: 2px solid #888;
+    line-height: 25px;
+    border: 0px solid #888;
+    background-color: var(--cssTheme);
     color: #888;
     text-align: center;
+    border-radius: 15px;
+}
+span.btxt {
+    color: var(--cssTheme);
+    filter: grayscale() contrast(1000) invert(1);
 }
 
 .button:hover {
@@ -71,7 +90,8 @@ body {
 }
 
 input.number {
-    width: 50px;
+    width: 100px;
+    height: 20px;
 }
 
 input[type=text] {
@@ -79,6 +99,7 @@ input[type=text] {
     border: 2px solid #888;
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     color: #666;
+    font-size: 18px;
 }
 
 input[type=text]:focus {
@@ -87,7 +108,8 @@ input[type=text]:focus {
 }
 
 #inputBorderTitle {
-    width: 100px;
+    width: 150px;
+    height: 20px
 }
 
 .colorTheme {

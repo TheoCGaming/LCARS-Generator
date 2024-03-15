@@ -57,6 +57,16 @@ var rgbToHash = function (rgb) {
     };
 };
 
+var saveSVG = function() {
+    const svg = document.getElementById('testFrame').innerHTML;
+  const blob = new Blob([svg.toString()]);
+  const element = document.createElement("a");
+  element.download = "LCARS.svg";
+  element.href = window.URL.createObjectURL(blob);
+  element.click();
+  element.remove();
+}
+
 /**
  * A "hack" helper function used to get the width of the SVG represented by the html code given.
  * 

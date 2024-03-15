@@ -18,6 +18,7 @@ body {
     background-image: url('resources/background.jpg');
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     font-size: 15pt;
+    color:white;
 }
 
 /*
@@ -27,6 +28,10 @@ body {
     border: 1px solid red;
 }
 */
+
+#mainContainer {
+    width:550px;
+}
 
 #testFrame {
     margin-right: 30px;
@@ -39,9 +44,12 @@ body {
 }
 
 #testFrameContainer {
-    float:right;
-    padding-top:auto;
-    padding-bottom:auto;
+    float: right;
+    padding-top: auto;
+    padding-bottom: auto;
+    top: 0px;
+    right: 0px;
+    position: absolute;
 }
 
 #banner {
@@ -92,19 +100,20 @@ span.btxt {
 input.number {
     width: 100px;
     height: 20px;
+    color: white;
 }
 
 input[type=text] {
     background-color: transparent;
     border: 2px solid #888;
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-    color: #666;
+    color: #AAA;
     font-size: 18px;
 }
 
 input[type=text]:focus {
     border: 2px solid black;
-    color: black;
+    color: white;
 }
 
 #inputBorderTitle {

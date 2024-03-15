@@ -224,11 +224,11 @@ Control.getOptions = function () {
 
 Control.setFrame = function (code, width, height, background) {
     
-    $('#mainContainer').fadeOut(500, function () {
+//    $('#mainContainer').fadeOut(500, function () {
         $('#testFrame').width(width);
         $('#testFrame').html(code);
         $('#testFrameContainer').css('background-color', background);
         
-        $('#mainContainer').fadeIn(500);
-    });
+//        $('#mainContainer').fadeIn(500);
+//    });
 }

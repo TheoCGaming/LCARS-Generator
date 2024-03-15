@@ -237,7 +237,7 @@ Generator.generateHorizontalBorder = function (borderId, title) {
         remainingWidth -= thisBlockWidth + padding;
     }
     
-    code += '<rect x="' + x + '" y="' + options.y + '" width="' + remainingWidth + '" height="' + options.height + '" fill="' + Generator.randomColor() + '" "/>';
+    code += '<rect x="' + x + '" y="' + options.y + '" width="' + remainingWidth + '" height="' + options.height + '" fill="' + Generator.randomColor() + '" />';
     
     return code;
 };
